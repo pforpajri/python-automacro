@@ -8,10 +8,10 @@ class Main:
 
 		self.main = Tk()
 
-		self.mainFrame = Frame(self.root)
-		self.forLabel = Frame(self.root)
+		self.mainFrame = Frame(self.main)
+		self.forLabel = Frame(self.main)
 
-		self.root.title("Automacro")
+		self.main.title("Automacro")
 
 		self.label= Label(self.mainFrame,text="Close sofware ini untuk disable",bg='yellow',fg='red').pack(side=TOP)
 		self.btn = Button(self.mainFrame,text="Tekan ini untuk mengaktifkan",command=self.clicking).pack()
